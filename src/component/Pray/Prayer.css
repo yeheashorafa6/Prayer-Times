@@ -1,0 +1,23 @@
+.css-1oitmrd-MuiButtonBase-root-MuiCardActionArea-root{
+    background-color: white !important;
+    border-radius: 15px !important;
+}
+
+.css-dbklhb-MuiStack-root{
+    justify-content: space-between !important;
+    flex-wrap: wrap;
+}
+
+.css-h93ljk-MuiTypography-root , .css-ag7rrr-MuiTypography-root{
+    color: #444;
+}
+
+.css-h93ljk-MuiTypography-root span , .css-ag7rrr-MuiTypography-root span{
+    color: #fa0;
+}
+.pray-name , .pray-date{
+    font-size: 20px;
+    color: #484545;
+}
+
+

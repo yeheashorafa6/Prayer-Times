@@ -1,0 +1,20 @@
+.soical-items{
+    display: flex;
+}
+
+.soical-item{
+    list-style: none !important;
+    margin-right: 1rem;
+    font-size: 30px;
+}
+
+.soical-link .icon{
+
+    color: #fa4;
+    transition: all .5s ease;
+}
+
+.soical-link:hover .icon{
+
+    color: rgb(222, 152, 67);
+}
