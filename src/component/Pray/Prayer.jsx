@@ -16,21 +16,11 @@ import { useContext, useEffect} from "react";
 import { PrayerContext } from "../../App";
 
 
-const FontMedia = styled("div")(({ theme }) => ({
-  [theme.breakpoints.up("sm")]: {
-    fontSize: "20px",
-  },
-  [theme.breakpoints.up("md")]: {
-    fontSize: "21px",
-  },
-  [theme.breakpoints.up("lg")]: {
-    fontSize: "25px",
-  },
-}));
 
 const Padding = styled("div")(({ theme }) => ({
   [theme.breakpoints.down("sm")]: {
     padding: "1.5rem",
+    
   },
   [theme.breakpoints.up("sm")]: {
     padding: "1.6rem",
@@ -45,7 +35,20 @@ const Padding = styled("div")(({ theme }) => ({
 
 function Prayer({ selectCity, iso, city }) {
 
-  const {timings , setTimings} = useContext(PrayerContext);
+  const {timings , setTimings, lightMode} = useContext(PrayerContext);
+  
+  const FontMedia = styled("div")(({ theme }) => ({
+    [theme.breakpoints.up("sm")]: {
+      fontSize: "20px",
+      color : lightMode ? "black" : "white"
+    },
+    [theme.breakpoints.up("md")]: {
+      fontSize: "21px",
+    },
+    [theme.breakpoints.up("lg")]: {
+      fontSize: "25px",
+    },
+  }));
   
 
 
@@ -61,8 +64,6 @@ function Prayer({ selectCity, iso, city }) {
   }, [selectCity]);
 
 
-const prayerValue = timings;
-
 
   const items = [
     { id: 1, image: Fajr, name: "Fajr", date: timings.Fajr },
@@ -76,18 +77,19 @@ const prayerValue = timings;
   const itemList = items.map((item) => {
     return (
       
-      <Grid item xs={12} sm={6} ms={4} md={4} key={item.id}>
-        <Card sx={{ maxWidth: 345 }}>
+      <Grid item xs={12} sm={6} ms={4} md={4} key={item.id} >
+        <Card sx={{ maxWidth: 345 }} >
           <CardMedia
             component="img"
             alt="green iguana"
             height="140"
             image={item.image}
+            
           />
-          <Padding>
+          <Padding  style={{background : lightMode ? "white" : "#444"}}>
             <CardContent>
-              <Typography gutterBottom variant="h5">
-                <FontMedia>
+              <Typography gutterBottom variant="h5" >
+                <FontMedia >
                   Prayers : <span>{item.name}</span>
                 </FontMedia>
               </Typography>
