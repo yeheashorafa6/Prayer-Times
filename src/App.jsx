@@ -20,6 +20,8 @@ function App() {
     Isha: "18:45",
   });
 
+  const [lightMode , setLightMode] = useState(false);
+
 
   // == STATE ==
 
@@ -27,7 +29,7 @@ function App() {
 
   const theme = createTheme({
         palette: {
-          mode : "dark",
+          mode : lightMode ? "light" : "dark",
           primary : {
             main: "#444"
           }
@@ -39,7 +41,7 @@ function App() {
       <CssBaseline/>
       
      {/* HEADER */}
-     <Topbar />
+     <Topbar change={() => {setLightMode(!lightMode)}} checked={lightMode}/>
      {/* == HEADER == */}
 
       {/* MAIN CONTENT */}
