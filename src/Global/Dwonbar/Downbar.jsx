@@ -45,7 +45,7 @@ function Downbar() {
       <div className="copyright">
       <h4>
         <FontMedia>
-          Copyright © 2024 | Desing By <span>Yehea Fayez Shorafa</span>
+          Copyright © 2024 | Desing By <span>Yehea Shorafa</span>
           
         </FontMedia>
         </h4>
