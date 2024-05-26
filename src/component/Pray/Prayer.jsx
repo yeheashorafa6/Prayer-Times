@@ -3,7 +3,7 @@ import Fajr from "./../../assets/image/praying/fajr.png";
 import Sunrise from "./../../assets/image/praying/sunrise.jpg";
 import Dhhr from "./../../assets/image/praying/dhhr.png";
 import Asr from "./../../assets/image/praying/asr.png";
-import Maghrib from "./../../assets/image/praying/sunset.png";
+import Maghrib from "./../../assets/image/praying/maghrib.png";
 import Isha from "./../../assets/image/praying/night.png";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
@@ -43,7 +43,7 @@ function Prayer({ selectCity, iso, city }) {
       color : lightMode ? "black" : "white"
     },
     [theme.breakpoints.up("md")]: {
-      fontSize: "21px",
+      fontSize: "20px",
     },
     [theme.breakpoints.up("lg")]: {
       fontSize: "25px",
@@ -108,7 +108,7 @@ function Prayer({ selectCity, iso, city }) {
   return (
     <>
       <Grid container spacing={2} style={{ marginTop: "20px" }}>
-        {itemList}
+          {itemList}  
       </Grid>
     </>
   );
