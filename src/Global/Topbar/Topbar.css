@@ -1,13 +1,13 @@
 .css-1k0i2s9-MuiPaper-root-MuiAppBar-root {
-    background:#fa0 !important;
+    background:transparent !important;
     box-shadow: none !important;
-    margin-top: 10px;
+    margin-top: 12px;
 }
 
 .css-1l13ezb-MuiPaper-root-MuiAppBar-root{
     background-color: transparent !important;
     box-shadow: none !important;
-    margin-top: 10px;
+    margin-top: 12px;
 
 }
 
@@ -23,4 +23,9 @@
 
 .css-1da8zah{
     color: white !important;
+}
+
+header{
+    background: transparent !important;
+    margin-top: 12px;
 }
