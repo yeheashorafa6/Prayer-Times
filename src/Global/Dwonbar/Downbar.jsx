@@ -26,8 +26,8 @@ const FontMedia = styled("div")(({ theme }) => ({
 function Downbar() {
   const icons = [
     { id: 1, icon: faFacebook , src : "https://www.facebook.com/profile.php?id=61556157676426"},
-    { id: 3, icon: faInstagram , src : "https://www.instagram.com/yehea__sh/" },
-    { id: 4, icon: faWhatsapp , src : "+972569353191" },
+    { id: 2, icon: faInstagram , src : "https://www.instagram.com/yehea__sh/" },
+    { id: 3, icon: faWhatsapp , src : "+972569353191" },
   ];
 
   const iconList = icons.map((icon) => {
@@ -45,7 +45,8 @@ function Downbar() {
       <div className="copyright">
       <h4>
         <FontMedia>
-          Copyright © 2024 | Desing By <span>Yehea Shorafa</span>
+          Copyright © 2024 | Desing By <span>Yehea Fayez Shorafa</span>
+          
         </FontMedia>
         </h4>
       </div>
